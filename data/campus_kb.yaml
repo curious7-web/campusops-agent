@@ -1,0 +1,40 @@
+items:
+  - id: kb-password-reset
+    title: Password reset / account access
+    keywords: ["password", "reset", "login", "account", "mfa", "locked", "challenge questions", "unlock account"]
+    answer: "Use the official password management page: https://password.springfield.edu. Do not ask users to post passwords, OTP codes, or full private ID details in Slack. Ask what system is affected and whether the reset/unlock path worked. Escalate if the account is disabled/inactive, current employee access is blocked, identity does not match, MFA is broken, or reset path fails."
+
+  - id: kb-printer-access
+    title: Printer access / PaperCut troubleshooting
+    keywords: ["printer", "print", "printing", "papercut", "access denied", "secure server connection", "paper jam"]
+    answer: "Collect building/floor/room, printer name or area, exact error, and whether the issue affects one user, one printer, multiple printers, or multiple users. Escalate if multiple printers are affected, there is a secure server connection error, a department-wide outage, or hardware failure."
+
+  - id: kb-pridenet-portal
+    title: PrideNET / portal / incoming student access
+    keywords: ["pridenet", "portal", "student self-service", "soar", "math placement", "housing", "no profile", "incoming student", "adirondack"]
+    answer: "For incoming students, full PrideNET access may not be available until closer to semester start. Use the official TechHelp page where applicable: https://mypridenet.springfield.edu/techhelp/. Collect exact portal link, user status, exact error, whether email works, and deadline. Escalate if a direct link still fails, a profile seems missing, or deadline is today."
+
+  - id: kb-wifi
+    title: Wi-Fi / device connection
+    keywords: ["wifi", "wi-fi", "network", "device connection", "eduroam", "internet", "connection"]
+    answer: "Collect location, device type, network name, exact error/behavior, and whether it affects one user or multiple users. Escalate if multiple users are affected, a classroom/event/work function is blocked, or a building-wide issue is suspected."
+
+  - id: kb-classroom-tech
+    title: Classroom technology / AV issue
+    keywords: ["projector", "classroom", "audio", "zoom", "hdmi", "class starting", "exam", "loaner laptop", "presentation"]
+    answer: "Collect building/room, class or event time, affected equipment, and whether class/event is already blocked. Prioritize active classes, exams, and events. Escalate to technician/AV support when class is active, exam/event is soon, or AV hardware failure is suspected."
+
+  - id: kb-google-apps
+    title: Google / Gmail / Drive / Docs access
+    keywords: ["gmail", "google drive", "google docs", "drive disabled", "docs disabled", "google apps", "email works"]
+    answer: "If Gmail works but Drive or Docs do not, collect a redacted screenshot of the Google app error and confirm active user status. Do not ask for password. Escalate if active account service provisioning appears disabled or coursework/work is blocked."
+
+  - id: kb-phishing
+    title: Phishing / suspicious email
+    keywords: ["phishing", "suspicious email", "clicked link", "qr code", "validate gmail", "wixsite", "credentials entered"]
+    answer: "Tell the user not to click the link again and not to enter credentials. Ask whether they entered a username/password or only clicked. If credentials were entered, treat as high priority and escalate. For demo purposes, use security forwarding language only after verifying the correct Springfield College reporting address."
+
+  - id: kb-facilities-urgent
+    title: Residence Life / facilities urgent issue
+    keywords: ["heater", "heat", "ac", "air conditioning", "leak", "flood", "maintenance", "room", "lockout", "freezing", "facilities"]
+    answer: "Collect hall/room/common area, issue type, and whether there is an immediate safety concern. Escalate immediately for no heat in cold weather, flooding/leaks, lockout, electrical issues, or unsafe conditions. Route to Residence Life, Facilities, Campus Safety, or ITS depending on ownership."
