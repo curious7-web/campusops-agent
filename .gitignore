@@ -4,3 +4,5 @@ __pycache__/
 *.pyc
 data/tickets.jsonl
 .DS_Store
+__pycache__/
+*.pyc

@@ -8,7 +8,7 @@ from .knowledge import KnowledgeBase
 from .tickets import TicketStore
 from .rts import RealTimeSearchClient
 from .safety import sanitize_user_text, contains_sensitive_data_warning
-
+from .ai_triage import ai_refine_triage
 
 @dataclass
 class TriageResult:
@@ -38,10 +38,9 @@ class CampusOpsAgent:
             return self._handoff(user_id=user_id, channel_id=channel_id)
 
         triage = self._triage(clean)
+        triage = ai_refine_triage(clean, triage)
         kb_matches = self.kb.search(clean, limit=3)
 
-        # Optional Slack Real-Time Search context, only if action token is present.
-        # This keeps the demo privacy-safe: no raw Slack data is stored.
         live_sources = []
         if action_token and self.rts.is_configured():
             live_sources = self.rts.search(query=clean, action_token=action_token, limit=3)
